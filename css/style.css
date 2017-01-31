@@ -1,0 +1,19 @@
+body {
+	font-size: 14px;
+	/*высота строки?*/
+	color: black;
+	font-weight: normal;
+	font-family: "PT Sans";
+}
+
+h2 {
+	font-size: 21px;
+	/*высота строки?*/
+	color: black;
+	font-weight: bold;
+	font-family: "PT Sans";
+}
+
+.reason-blue h2 {
+	color: white;
+}
