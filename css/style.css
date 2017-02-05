@@ -14,6 +14,10 @@ h2 {
 	font-family: "PT Sans";
 }
 
+.welcome {
+	background-image: image(img/background.jpg);
+}
+
 .reason-blue h2 {
 	color: white;
 }
