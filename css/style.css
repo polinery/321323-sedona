@@ -1,23 +1,23 @@
 body {
 	font-size: 14px;
-	/*высота строки?*/
-	color: black;
+	line-height: 21px;
+	color: #000000;
 	font-weight: normal;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 h2 {
 	font-size: 21px;
-	/*высота строки?*/
-	color: black;
+	line-height: 26px;
+	color: #000000;
 	font-weight: bold;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .welcome {
-	background-image: image(img/background.jpg);
+	background: url("../img/background.jpg") no-repeat;
 }
 
 .reason-blue h2 {
-	color: white;
+	color: #ffffff;
 }
