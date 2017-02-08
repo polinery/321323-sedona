@@ -167,19 +167,21 @@ h2 {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 14px;
+	line-height: 26px;
+	width: 400px;
+	height: 120px;
 	outline: 1px dashed #000000;
 }
 
-.footer-hashtag,
-.footer-social,
-.footer-copyright {
-	width: 400px;
-}
-
-.footer-hashtag {
-	font-size: 21px;
-	line-height: 26px;
+.footer-hashtag a{
 	color: #000000;
+	font-size: 21px;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+.footer-copyright {
+	font-size: 14px;
+	text-transform: uppercase;
 }
