@@ -14,6 +14,7 @@ body {
 	outline: 1px dashed #000000;
 }
 
+/* Шапка */
 .logo {
 	position: absolute;
 	width: 137px;
@@ -34,6 +35,8 @@ body {
 
 .menu-item {
 	padding: 15px 0;
+	width: 20%;
+	text-align: center;
 }
 
 .menu-item a {
@@ -54,26 +57,42 @@ body {
 	float: right;
 }
 
+/* Основной блок */
 h2 {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 	font-family: "PT Sans", "Arial", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 59px;
+}
+
+.welcome p {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 29px;
+	margin-bottom: 53px;
 }
 
 .welcome-bg {
 	background: url("../img/background.jpg") no-repeat;
+	text-align: center;
 }
 
 .welcome-bg img {
-	margin-top: 78px;
-	margin-bottom: 78px;
+	margin-top: 76px;
+	margin-bottom: 76px;
 }
 
-.reason-blue{
+.reason-blue {
 	float: left;
 	width: 400px;
+	height: 256px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #81b3d2;
 }
 
 .reason-blue h2 {
@@ -82,7 +101,6 @@ h2 {
 
 .reason-wrap {
 	outline: 1px dashed #000000;
-	background-color: #dddddd;
 }
 
 .reason-photo {
@@ -93,12 +111,55 @@ h2 {
 	vertical-align: bottom;
 }
 
+.content-promo {
+	height: 330px;
+}
+
+.promo-hotel {
+	background: url("../img/tmp/house.png") no-repeat;
+}
+ 
+.reason-gray {
+	height: 256px;
+	background-color: #dddddd;
+}
 .content-promo, 
 .reason-gray {
 	float: left;
 	width: 400px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
+.search {
+	padding-top: 58px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.question div {
+	width: 291px;
+}
+
+.question span {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-top: 20px;
+}
+
+.question p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 25px;
+}
+
+.map {
+	
+	outline: 1px dashed #000000;
+}
+
+/* Подвал */
 .page-footer {
 	font-size: 0;
 	text-align: center;
