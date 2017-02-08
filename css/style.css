@@ -132,20 +132,18 @@ h2 {
 }
 
 .search {
-	padding-top: 58px;
-	text-transform: uppercase;
-	text-align: center;
 }
 
-.question div {
-	width: 291px;
+.question {
+	margin-top: 58px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .question span {
 	font-size: 30px;
-	font-weight: bold;
 	line-height: 24px;
-	margin-top: 20px;
+	font-weight: bold;
 }
 
 .question p {
@@ -172,3 +170,16 @@ h2 {
 	outline: 1px dashed #000000;
 }
 
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+	width: 400px;
+}
+
+.footer-hashtag {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
