@@ -157,6 +157,16 @@ h2 {
 	outline: 1px dashed #000000;
 }
 
+.search-form {
+	position: absolute;
+	width: 568px;
+	height: 394px;
+	left: calc(50%-286px);
+	padding: 55px;
+	background: #ffffff;
+	z-index: 5;
+}
+
 /* Подвал */
 .page-footer {
 	font-size: 0;
