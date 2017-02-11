@@ -157,14 +157,27 @@ h2 {
 	outline: 1px dashed #000000;
 }
 
+.search-article {
+	width: 568px;
+	height: 56px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #766357;
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+	z-index: 5;
+	padding-top: 30px;
+}
+
 .search-form {
 	position: absolute;
-	width: 568px;
+	width: 458px;
 	height: 394px;
-	left: calc(50%-286px);
+	left: calc(50% - 284px);
 	padding: 55px;
 	background: #ffffff;
-	z-index: 5;
 }
 
 /* Подвал */
