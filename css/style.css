@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 	outline: 1px dashed #000000;
@@ -167,7 +168,6 @@ h2 {
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
-	z-index: 5;
 	padding-top: 30px;
 }
 
@@ -178,12 +178,20 @@ h2 {
 	left: calc(50% - 284px);
 	padding: 55px;
 	background: #ffffff;
+	z-index: 5;
 }
 
 /* Подвал */
 .page-footer {
 	font-size: 0;
 	text-align: center;
+}
+
+.page-footer-index {
+	position: absolute;
+	bottom: 0;
+	background-color: (255, 255, 255, 0.902)
+	z-index: 38;
 }
 
 .page-footer section {
