@@ -16,7 +16,7 @@ body {
 }
 
 .container-inner {
-	margin: 0 73px;
+	margin: 0 72px;
 }
 
 .clearfix::after {
@@ -74,6 +74,10 @@ h2 {
 	margin-top: 59px;
 }
 
+.welcome {
+	position: relative;
+}
+
 .welcome p {
 	text-align: center;
 	text-transform: uppercase;
@@ -91,6 +95,12 @@ h2 {
 	margin-bottom: 76px;
 }
 
+.welcome-shape {
+	position: absolute;
+	left: 0;
+	bottom: 163px;
+	
+}
 .reason-blue {
 	float: left;
 	width: 400px;
