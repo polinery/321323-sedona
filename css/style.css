@@ -113,13 +113,21 @@ h2 {
 
 .reason-blue h2 {
 	color: #ffffff;
+	line-height: 21px;
+	margin-top: 55px;
+	margin-bottom: 23px;
 	margin-left: 100px;
 	margin-right: 100px;
 }
 
+.reason-blue span {
+	
+}
+
 .reason-blue p {
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-top: 22px;
+	margin-left: 47px;
+	margin-right: 47px;
 }
 
 .reason-wrap {
