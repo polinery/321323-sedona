@@ -102,6 +102,7 @@ h2 {
 }
 
 /* 5 причин */
+/* 1 причина */
 .reason-blue {
 	float: left;
 	width: 400px;
@@ -118,10 +119,6 @@ h2 {
 	margin-bottom: 23px;
 	margin-left: 100px;
 	margin-right: 100px;
-}
-
-.reason-blue span {
-	
 }
 
 .reason-blue p {
@@ -142,14 +139,42 @@ h2 {
 	vertical-align: bottom;
 }
 
+/* промо */
+.content-wrap {
+}
+
 .content-promo {
-	height: 330px;
+	line-height: 21px;
+	height: 230px;
+	padding-top: 100px;
+}
+
+.content-promo h2 {
+	margin-top: 60px;
+}
+
+.content-promo p {
+	margin-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .promo-hotel {
 	background: url("../img/tmp/house.png") no-repeat;
+	background-position: center 60px;
 }
- 
+
+.promo-food {
+	background: url("../img/tmp/food.png") no-repeat;
+	background-position: center 60px;
+}
+
+.promo-souvenir {
+	background: url("../img/tmp/souvenir.png") no-repeat;
+	background-position: center 60px;
+}
+
+/* 3-5 причина */
 .reason-gray {
 	height: 256px;
 	background-color: #dddddd;
