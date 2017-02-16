@@ -223,7 +223,6 @@ h2 {
 
 .map {
 	position: relative;
-	outline: 1px dashed #000000;
 }
 
 .search-article {
@@ -422,7 +421,7 @@ h2 {
 
 .page-footer section {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: 400px;
 	outline: 1px dashed #000000;
 }
@@ -430,6 +429,7 @@ h2 {
 .footer-hashtag a {
 	color: #000000;
 	font-size: 21px;
+	vertical-align: middle;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -467,5 +467,15 @@ h2 {
 
 .footer-copyright {
 	font-size: 14px;
+	line-height: 26px;
 	text-transform: uppercase;
+}
+
+.footer-copyright a {
+	font-size: 0px;
+	margin-left: 5px;
+	display: inline-block;
+	width: 113px;
+	height: 39px;
+	background: url(../img/tmp/htmlacademy.png) no-repeat center;
 }
