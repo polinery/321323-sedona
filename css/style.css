@@ -1,3 +1,196 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-2stars_blau {
+    width: 42px;
+    height: 17px;
+    background-position: -25px -25px;
+}
+
+.sprite-3stars_blau {
+    width: 65px;
+    height: 17px;
+    background-position: -25px -92px;
+}
+
+.sprite-4stars_blau {
+    width: 89px;
+    height: 17px;
+    background-position: -25px -159px;
+}
+
+.sprite-cale_black {
+    width: 21px;
+    height: 22px;
+    background-position: -25px -226px;
+}
+
+.sprite-cale_blau {
+    width: 21px;
+    height: 22px;
+    background-position: -25px -298px;
+}
+
+.sprite-cale_gray {
+    width: 21px;
+    height: 22px;
+    background-position: -25px -370px;
+}
+
+.sprite-check_gray {
+    width: 26px;
+    height: 22px;
+    background-position: -25px -442px;
+}
+
+.sprite-check_whight {
+    width: 26px;
+    height: 22px;
+    background-position: -25px -514px;
+}
+
+.sprite-down_black {
+    width: 11px;
+    height: 10px;
+    background-position: -25px -586px;
+}
+
+.sprite-down_blau {
+    width: 11px;
+    height: 10px;
+    background-position: -25px -646px;
+}
+
+.sprite-down_gray {
+    width: 11px;
+    height: 10px;
+    background-position: -25px -706px;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -25px -766px;
+}
+
+.sprite-food {
+    width: 74px;
+    height: 70px;
+    background-position: -25px -835px;
+}
+
+.sprite-house {
+    width: 75px;
+    height: 72px;
+    background-position: -25px -955px;
+}
+
+.sprite-html_black {
+    width: 113px;
+    height: 39px;
+    background-position: -25px -1077px;
+}
+
+.sprite-html_blau {
+    width: 113px;
+    height: 39px;
+    background-position: -25px -1166px;
+}
+
+.sprite-html_gray {
+    width: 113px;
+    height: 39px;
+    background-position: -25px -1255px;
+}
+
+.sprite-minus_black {
+    width: 12px;
+    height: 3px;
+    background-position: -25px -1344px;
+}
+
+.sprite-minus_blau {
+    width: 12px;
+    height: 3px;
+    background-position: -25px -1397px;
+}
+
+.sprite-minus_gray {
+    width: 12px;
+    height: 3px;
+    background-position: -25px -1450px;
+}
+
+.sprite-notcheck_gray {
+    width: 22px;
+    height: 22px;
+    background-position: -25px -1503px;
+}
+
+.sprite-notcheck_whight {
+    width: 22px;
+    height: 22px;
+    background-position: -25px -1575px;
+}
+
+.sprite-plus_black {
+    width: 11px;
+    height: 11px;
+    background-position: -25px -1647px;
+}
+
+.sprite-plus_blau {
+    width: 11px;
+    height: 11px;
+    background-position: -25px -1708px;
+}
+
+.sprite-plus_gray {
+    width: 11px;
+    height: 11px;
+    background-position: -25px -1769px;
+}
+
+.sprite-souvenir {
+    width: 64px;
+    height: 76px;
+    background-position: -25px -1830px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -25px -1956px;
+}
+
+.sprite-up_black {
+    width: 11px;
+    height: 10px;
+    background-position: -25px -2021px;
+}
+
+.sprite-up_blau {
+    width: 11px;
+    height: 10px;
+    background-position: -25px -2081px;
+}
+
+.sprite-up_gray {
+    width: 11px;
+    height: 10px;
+    background-position: -25px -2141px;
+}
+
+.sprite-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -25px -2201px;
+}
+
+
 body {
 	font-size: 14px;
 	line-height: 21px;
@@ -30,6 +223,7 @@ body {
 	position: absolute;
 	width: 137px;
 	left: calc(50% - 68.5px);
+	z-index: 5;
 }
 
 .menu-list {
@@ -52,6 +246,15 @@ body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.menu-item a:hover {
+	color: #81b3d2;
+}
+
+.menu-item a:active {
+	color: #000000;
+	opacity: 0.3;
 }
 
 .item-left {
@@ -86,13 +289,26 @@ h2 {
 }
 
 .welcome-bg {
-	background: url("../img/background.jpg") no-repeat;
+	position: relative;
+	background: url("../img/background.jpg");
 	text-align: center;
 }
 
+.welcome-bg::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url("../img/shape.png");
+	width: 1200px;
+	height: 57px;
+	bottom: 0;
+	
+}
+				
 .welcome-bg img {
 	margin-top: 76px;
-	margin-bottom: 76px;
+	margin-bottom: 80px;
+	vertical-align: bottom;
 }
 
 .welcome-shape {
@@ -117,8 +333,8 @@ h2 {
 	line-height: 21px;
 	margin-top: 55px;
 	margin-bottom: 23px;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 125px;
+	margin-right: 125px;
 }
 
 .reason-blue p {
@@ -144,6 +360,7 @@ h2 {
 }
 
 .content-promo {
+	position: relative;
 	line-height: 21px;
 	height: 230px;
 	padding-top: 100px;
@@ -159,18 +376,25 @@ h2 {
 	padding-right: 50px;
 }
 
-.promo-hotel {
-	background: url("../img/tmp/house.png") no-repeat;
-	background-position: center 60px;
+.promo-hotel::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url("../img/sprite.png");
+    width: 75px;
+    height: 72px;
+    background-position: -25px -955px;
+	top: 60px;
+	left: calc(50% - 37.5px);
 }
 
 .promo-food {
-	background: url("../img/tmp/food.png") no-repeat;
+	background: url("../img/tmp/food.png");
 	background-position: center 60px;
 }
 
 .promo-souvenir {
-	background: url("../img/tmp/souvenir.png") no-repeat;
+	background: url("../img/tmp/souvenir.png");
 	background-position: center 60px;
 }
 
@@ -225,6 +449,11 @@ h2 {
 	position: relative;
 }
 
+.map img {
+	vertical-align: bottom;
+}
+
+/*Форма поиска */
 .search-article {
 	width: 568px;
 	margin: 0 auto;
@@ -250,40 +479,51 @@ h2 {
 }
 
 .search-data {
-	vertical-align: middle;
+	position: relative;
 	margin-bottom: 29px;
+	font-size: 0;
 }
 
 .search-data label {
 	float: left;
+	margin-top: 7px;
+	font-size: 14px;
 	line-height: 26px;
-	
-}
-
-.search-data-buttom {
-	padding: 0;
+	font-weight: 700;
 }
 
 .search-data input {
-	display: inline-block;
+	float: right;
 	width: 336px;
-	margin-left: 21px;
-	padding: 0;
+	padding: 6px 0;
 	padding-left: 10px;
-	line-height: 38px;
-	border-width: 0px;
+	border: 0;
+	outline: 0;
 	background-color: #f2f2f2;
-	vertical-align: middle;
 	text-transform: uppercase;
-	z-index: 6;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
 }
 
-.search-data-buttom buttom {
+.search-data span {
+	position: absolute;
+	display: block;
 	padding: 0;
-	background-image: url(../img/tmp/calendar.png) no-repeat;
-	top: 2px;
-	right: 2px;
-	z-index: 10;
+	background-image: url(../img/sprite.png);
+    width: 21px;
+    height: 22px;
+    background-position: -25px -370px;
+	top: 8px;
+	right: 8px;
+}
+
+.search-data span:hover {
+    background-position: -25px -226px;
+}
+
+.search-data span:active {
+    background-position: -25px -298px;
 }
 
 .search-guest {
@@ -293,13 +533,98 @@ h2 {
 }
 
 .adults {
-	display: inline-block;
+	float: left;
 	width: 229px;
 }
 
+.search-guest label {
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	margin-top: 8px;
+}
+
+.search-guest button,
+.search-guest input {
+	float: right;
+}
+
 .children {
-	display: inline-block;
-	width: 229px;
+	float: right;
+	width: 179px;
+}
+
+.search-guest input {
+	width: 38px;
+	border: 0;
+	outline: 0;
+	padding: 6px 0;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+.search-guest button {
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+
+.btn-plus {
+	background-image: url(../img/sprite.png);
+    background-position: -12px -1755px;
+}
+
+.btn-plus:hover {
+    background-position: -12px -1633px;
+}
+
+.btn-plus:active {
+	background-position: -12px -1694px;
+}
+
+.btn-minus {
+	background-image: url(../img/sprite.png);
+    background-position: -12px -1431px;
+}
+
+.btn-minus:hover {
+    background-position: -12px -1325px;
+}
+
+.btn-minus:active {
+    background-position: -12px -1378px;
+}
+
+.btn-search {
+	display: block;
+	margin: 0;
+	padding: 16px 0;
+	border: 0;
+	outline: 0;
+	background-color: #81b3d2;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	width: 100%;
+	cursor: pointer;
+}
+
+.btn-search:hover {
+	background-color: #669ec0;
+}
+
+.btn-search:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 /* Основной блок внутренней страницы Отели */
@@ -352,7 +677,7 @@ h2 {
 
 .hotels-heder {
 	padding: 30px 72px;
-	border-bottom: 1px solid #f2f2f2;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-heder span {
@@ -380,12 +705,9 @@ h2 {
 }
 
 .hotel {
-	padding: 30px 72px;
-}
-
-.hotel::after {
-	content: "";
-	border-bottom: 1px solid #f2f2f2;
+	position: relative;
+	padding: 30px 73px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-photo {
@@ -440,25 +762,62 @@ h2 {
 }
 
 .social-btn {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	width: 46px;
 	height: 48px;
-	background: #81b3d2 url(../img/tmp/social.png) no-repeat center;
+	background: #81b3d2;
 	font-size: 0;
 	margin-left: 6px;
 }
 
-.social-btn-tw {
-	background-position: 15px center;
+.social-btn:hover {
+	background-color: #669ec0;
 }
 
-.social-btn-fb {
-	background-position: center;
+.social-btn:active {
+	background-color: #5496bd;
 }
 
-.social-btn-yt {
-	background-position: -90px center;
+.social-btn-tw::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(../img/sprite.png);
+    width: 17px;
+    height: 15px;
+    background-position: -25px -1956px;
+	top: 17px;
+	left: calc(50% - 8.5px);
+}
+
+.social-btn-fb::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(../img/sprite.png);
+    width: 10px;
+    height: 19px;
+    background-position: -25px -766px;
+	top: 13px;
+	left: calc(50% - 5px); 
+}
+
+.social-btn-yt::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url(../img/sprite.png);
+    width: 20px;
+    height: 16px;
+    background-position: -25px -2201px;
+	top: 16px;
+	left: calc(50% - 10px);
+}
+
+.social-btn:active::after {
+	opacity: 0.3;
 }
 
 .social-btn:first-child {
@@ -466,8 +825,13 @@ h2 {
 }
 
 .footer-copyright {
+	font-size: 0;
+}
+
+.footer-copyright span {
+	display: inline-block;
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 39px;
 	text-transform: uppercase;
 }
 
@@ -477,5 +841,6 @@ h2 {
 	display: inline-block;
 	width: 113px;
 	height: 39px;
-	background: url(../img/tmp/htmlacademy.png) no-repeat center;
+	background: url(../img/sprite.png);
+    background-position: -25px -1077px;
 }
