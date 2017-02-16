@@ -251,20 +251,40 @@ h2 {
 }
 
 .search-data {
-	line-height: 26px;
 	vertical-align: middle;
 	margin-bottom: 29px;
 }
 
-.search-data input {
+.search-data label {
+	float: left;
 	line-height: 26px;
-	font-size: 12px;
-	vertical-align: middle;
-	text-transform: uppercase;
+	
 }
 
-.search-data buttom {
-	
+.search-data-buttom {
+	padding: 0;
+}
+
+.search-data input {
+	display: inline-block;
+	width: 336px;
+	margin-left: 21px;
+	padding: 0;
+	padding-left: 10px;
+	line-height: 38px;
+	border-width: 0px;
+	background-color: #f2f2f2;
+	vertical-align: middle;
+	text-transform: uppercase;
+	z-index: 6;
+}
+
+.search-data-buttom buttom {
+	padding: 0;
+	background-image: url(../img/tmp/calendar.png) no-repeat;
+	top: 2px;
+	right: 2px;
+	z-index: 10;
 }
 
 .search-guest {
@@ -275,11 +295,12 @@ h2 {
 
 .adults {
 	display: inline-block;
-	
+	width: 229px;
 }
 
 .children {
 	display: inline-block;
+	width: 229px;
 }
 
 /* Основной блок внутренней страницы Отели */
@@ -423,9 +444,21 @@ h2 {
 	vertical-align: top;
 	width: 46px;
 	height: 48px;
-	background-color: #81b3d2;
+	background: #81b3d2 url(../img/tmp/social.png) no-repeat center;
 	font-size: 0;
 	margin-left: 6px;
+}
+
+.social-btn-tw {
+	background-position: 15px center;
+}
+
+.social-btn-fb {
+	background-position: center;
+}
+
+.social-btn-yt {
+	background-position: -90px center;
 }
 
 .social-btn:first-child {
