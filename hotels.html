@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="container clearfix">
-			
+
 <!-- Шапка -->
 			<header class="page-header">
 				<div class="logo">
@@ -19,13 +19,13 @@
 					<ul class="menu-list clearfix">
 						<li class="menu-item item-left"><a href="#">Информация</a></li>
 						<li class="menu-item item-left"><a href="#">Фото и Видео</a></li>
-						<li class="menu-item item-right"><a href="hotels.html">Гостиницы</a></li>
+						<li class="menu-item item-right"><a class="active" href="hotels.html">Гостиницы</a></li>
 						<li class="menu-item item-right"><a href="#">Карта штата</a></li>
 					</ul>
 				</nav>
 			</header>
-			
-<!-- Основной блок -->			
+
+<!-- Основной блок -->
 			<main>
 				<form class="search-hotels clearfix" action="#" method="get">
 					<fieldset class="options">
@@ -46,22 +46,23 @@
 						<input type="checkbox" id="options-apartments" name="options-apartments" checked>
 						<label for="options-apartments">Апартаменты</label>
 					</fieldset>
-					<fieldset class="price">
-						<legend>Стоимость в сутки (Р):</legend>
-						<div class="price-day">
-							<span>от<b>0</b></span>
-							<span>до<b>3000</b></span>
-						</div>
-						<div class="range-control">
-							<div class="scale"></div>
-							<div class="bar"></div>
-							<div class="toggle toggle-min"></div>
-							<div class="toggle toggle-max"></div>
-						</div>
-						<button type="submit">Показать</button>
-					</fieldset>
+					<fieldset class="filter-range">
+                        <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </fieldset>
 				</form>
-				
+
 				<section class="hotels-heder clearfix">
 					<span>Найдено:<b>3</b></span>
 					<ul class="sorting clearfix">
@@ -75,7 +76,7 @@
 						</li>
 					</ul>
 				</section>
-				
+
 				<section class="hotel clearfix">
 					<div class="hotel-photo"><img src="img/amara.jpg" width="135" height="90" alt="Amara resort &amp; spa"></div>
 					<div class="hotel-description">
@@ -96,7 +97,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section class="hotel clearfix">
 					<div class="hotel-photo"><img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn"></div>
 					<div class="hotel-description">
@@ -117,7 +118,7 @@
 						</div>
 					</div>
 				</section>
-				
+
 				<section class="hotel clearfix">
 					<div class="hotel-photo"><img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diablo"></div>
 					<div class="hotel-description">
@@ -139,8 +140,8 @@
 					</div>
 				</section>
 			</main>
-			
-<!-- Подвал -->			
+
+<!-- Подвал -->
 			<footer class="page-footer">
 				<section class="footer-hashtag">
 					<a href="#">#Visitsedona</a>
