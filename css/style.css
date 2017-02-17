@@ -228,14 +228,13 @@ body {
 
 .menu-list {
 	list-style: none;
-	padding: 0;
+	padding: 0 72px;
 	margin: 0;
 }
 
 .menu-item {
-	padding: 15px 0;
-	width: 20%;
-	text-align: center;
+	padding-top: 14px;
+	padding-bottom: 16px;
 }
 
 .menu-item a {
@@ -259,10 +258,12 @@ body {
 
 .item-left {
 	float: left;
+	margin-right: 148px;
 }
 
 .item-right {
 	float: right;
+	margin-left: 164px;
 }
 
 /* Основной блок  главной страницы */
