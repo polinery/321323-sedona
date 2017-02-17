@@ -689,20 +689,22 @@ color: #766357;
 	line-height: 21px;
 }
 
-label::before {
+.options label::before {
 	position: absolute;
 	top: -2px;
-	left: 0px;
+	left: -1px;
 	display: block;
-    width: 26px;
+    width: 22px;
     height: 22px;
 	background: url(../img/sprite.png);
-    background-position: -25px -514px;
+    background-position: -25px -1575px;
 	content: "";
 }
 
-.options input:checked + .options label::before {
-  display: none;
+.options input:checked + label::before {
+    width: 26px;
+    height: 22px;
+    background-position: -25px -514px;
 }
 
 .filter-range {
@@ -749,9 +751,7 @@ label::before {
   line-height: 21px;
   padding-top: 5px;
   padding-bottom: 4px;
-
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -768,10 +768,8 @@ label::before {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
@@ -784,24 +782,20 @@ label::before {
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
