@@ -750,19 +750,21 @@ h2 {
 	font-weight: 700;
 }
 
-.hotel-description span {
+.description-collumn span {
 	font-size: 14px;
 	line-height: 21px;
 	color: #000000;
 	text-transform: uppercase;
 }
 
-.hotel-description span>a {
+.description-collumn a {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
 	text-transform: uppercase;
+	background-color: #81b3d2;
 }
+
 
 .hotel-rating {
 	float: right;
