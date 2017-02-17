@@ -738,6 +738,32 @@ h2 {
 	float: left;
 }
 
+.hotel-description a {
+	text-decoration: none;
+}
+
+.hotel-description>a {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.hotel-description span {
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.hotel-description span>a {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
 .hotel-rating {
 	float: right;
 }
