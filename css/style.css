@@ -345,7 +345,6 @@ h2 {
 }
 
 .reason-wrap {
-	outline: 1px dashed #000000;
 }
 
 .reason-photo {
@@ -389,14 +388,29 @@ h2 {
 	left: calc(50% - 37.5px);
 }
 
-.promo-food {
-	background: url("../img/tmp/food.png");
-	background-position: center 60px;
+.promo-food::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url("../img/sprite.png");
+    width: 74px;
+    height: 70px;
+    background-position: -25px -835px;
+	top: 60px;
+	left: calc(50% - 37px);
+	
 }
 
-.promo-souvenir {
-	background: url("../img/tmp/souvenir.png");
-	background-position: center 60px;
+.promo-souvenir::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url("../img/sprite.png");
+    width: 64px;
+    height: 76px;
+    background-position: -25px -1830px;
+	top: 60px;
+	left: calc(50% - 38px);
 }
 
 /* 3-5 причина */
@@ -746,7 +760,6 @@ h2 {
 	display: inline-block;
 	vertical-align: middle;
 	width: 400px;
-	outline: 1px dashed #000000;
 }
 
 .footer-hashtag a {
