@@ -333,6 +333,14 @@ body {
   text-transform: uppercase;
 }
 
+.popup-hide {
+  display: none;
+}
+
+.popup-show {
+  display: block;
+}
+
 .search-data {
   position: relative;
   margin-bottom: 29px;
