@@ -707,6 +707,7 @@ body {
   margin-right: 30px;
   width: 135px;
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
@@ -761,47 +762,38 @@ body {
   font-size: 0px;
 }
 
-.sorting-up {
-  position: absolute;
-  top: 10px;
-  right: 23px;
-  display: block;
+.sorting-arrow a {
+  display: inline-block;
+  margin-top: 10px;
   width: 11px;
   height: 10px;
   background: url(../img/sprite.png);
-  background-position: -25px -2141px;
   content: "";
+  vertical-align: top;
 }
 
-.sorting-up:hover {
+a.sorting-up {
+  background-position: -25px -2141px;
+}
+
+a.sorting-up:hover {
   background-position: -25px -2021px;
 }
 
-.sorting-up:active {
+a.sorting-up:active {
   background-position: -25px -2081px;
 }
 
-.sorting-down {
-  position: absolute;
-  top: 9px;
-  right: 0;
-  display: block;
-  width: 11px;
-  height: 10px;
-  background: url(../img/sprite.png);
+a.sorting-down {
+  margin-left: 12px;
   background-position: -25px -646px;
-  content: "";
 }
 
-.sorting-down a {
-  border-bottom: 0;
-}
-
-.sorting-down:hover {
+a.sorting-down:hover {
   background-position: -25px -586px;
 }
 
-.sorting-down:active {
+a.sorting-down:active {
   background-position: -25px -646px;
 }
 
@@ -931,7 +923,8 @@ body {
   width: 110px;
   background-color: #f2f2f2;
   color: #666666;
-  text-align: center text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
 }
