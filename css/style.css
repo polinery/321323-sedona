@@ -235,7 +235,7 @@ color: #766357;
 }
 
 /* 3-5 причина */
-.reason-gray {
+.reason-wrap.bg-gray {
 	background-color: #dddddd;
 }
 .content-promo,
