@@ -15,20 +15,20 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
   color: #000000;
   font-weight: normal;
   font-size: 14px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
-  background-color: #f2f2f2;
 }
 
 .container {
   position: relative;
   margin: 0 auto;
   width: 1200px;
-  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
   background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .container-inner {
@@ -299,11 +299,11 @@ body {
 
 .map {
   position: relative;
+  width: 1200px;
+  height: 593px;
+  background: url(../img/map.jpg);
   background-color: #f2f1ef;
-}
-
-.map img {
-  vertical-align: bottom;
+  content: "";
 }
 
 
@@ -334,6 +334,9 @@ body {
   vertical-align: middle;
   text-transform: uppercase;
 }
+
+
+/*Анимация*/
 
 @keyframes show {
   0% {
@@ -369,10 +372,9 @@ body {
   }
 }
 
-.modal-show {
-  -webkit-transform-origin: top;
-  -ms-transform-origin: top;
-  transform-origin: top;
+.no-js .popup-show {
+  -webkit-animation: show .75s forwards;
+  animation: show .75s forwards;
 }
 
 .popup-show {
