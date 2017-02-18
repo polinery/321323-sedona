@@ -651,6 +651,7 @@ color: #766357;
 	padding-top: 28px;
 	padding-bottom: 5px;
 	background: url("../img/background_filter.jpg") no-repeat;
+    background-size: cover;
 }
 
 .options {
@@ -873,11 +874,6 @@ color: #766357;
   margin-left: 34px;
 }
 
-.sorting-item-active a {
-  color: #81b3d2;
-  border-bottom: 0;
-}
-
 .sorting-item a:hover {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
@@ -892,11 +888,13 @@ color: #766357;
   margin-left: 0;
 }
 
-.sorting-item:nth-child(2) a {
+.sorting-item-active a {
   margin-left: 38px;
+  border-bottom: 0;
+  color: #81b3d2;
 }
 
-.sorting-item:nth-child(5) {
+.sorting-arrow {
   float: right;
   font-size: 0px;
 }
@@ -933,6 +931,10 @@ color: #766357;
     background-position: -25px -646px;
 }
 
+.sorting-down a {
+  border-bottom: 0;
+}
+
 .sorting-down:hover {
     background-position: -25px -586px;
 }
@@ -957,7 +959,6 @@ color: #766357;
 
 /*Результат */
 .hotel {
-	position: relative;
 	padding: 30px 72px;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -973,51 +974,116 @@ color: #766357;
 
 .hotel-description {
 	float: left;
+    width: 600px;
 }
 
 .hotel-description a {
 	text-decoration: none;
 }
 
-.hotel-description>a {
+.hotel-title {
+  float: left;
+  display: block;
+  width: 600px;
 	color: #000000;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
+  margin-top: -4px;
+  margin-bottom: 6px;
+}
+
+.description-collumn {
+  float: left;
+  margin-right: 6px;
 }
 
 .description-collumn span {
+  display: block;
 	color: #000000;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 21px;
+  margin-bottom: 14px;
 }
 
-.description-collumn a {
-	background-color: #81b3d2;
+.btn-hotel {
+  display: block;
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 21px;
+  padding: 3px 17px;
+}
+
+.btn-brown {
+	background-color: #766357;
+}
+
+.btn-blau {
+	background-color: #81b3d2;
+}
+
+.btn-blau:hover {
+	background-color: #669ec0;
+}
+
+.btn-blau:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-brown:hover {
+	background-color: #604e43;
+}
+
+.btn-brown:active {
+	background-color: #604e43;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-rating {
 	float: right;
-    position: absolute;
+  text-align: right;
+}
+
+.star-row {
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  height: 20px;
+	background: url(../img/sprite.png);
+  margin-bottom: 44px;
+  margin-top: -1px;
+}
+
+.star-four {
+  width: 89px;
+    background-position: -25px -159px;
+}
+
+.star-three {
+    width: 65px;
+    background-position: -25px -92px;
+}
+
+.star-two {
+    width: 42px;
+    background-position: -25px -25px;
+}
+
+.rating-row {
     display: block;
     width: 110px;
-    bottom: 30px;
-    right: 72px;
     color: #666666;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 21px;
     background-color: #f2f2f2;
-    vertical-align: middle;
     padding-top: 3px;
     padding-bottom: 3px;
-    text-align: center
+     text-align: center
 }
 
 /* Подвал */
