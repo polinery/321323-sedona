@@ -344,10 +344,21 @@ color: #766357;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
+  border: 2px solid #f2f2f2;
 }
 
 .search-data input::-ms-clear {
    display: none;
+}
+
+.search-data input:hover {
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+
+.search-data input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
 .search-data span {
