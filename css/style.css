@@ -707,6 +707,7 @@ color: #766357;
     background-position: -25px -514px;
 }
 
+/* Стоимость - Ползунок*/
 .filter-range {
 	float: right;
   width: 325px;
@@ -727,9 +728,7 @@ color: #766357;
   margin-bottom: 20px;
   margin-left: 9px;
   margin-right: -2px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -834,6 +833,7 @@ color: #766357;
   background: #ffffff;
 }
 
+/* НАЙДЕНО*/
 .hotels-heder {
 	padding: 30px 72px;
 	border-bottom: 1px solid #e5e5e5;
@@ -849,6 +849,7 @@ color: #766357;
 }
 
 .sorting {
+  position: relative;
 	float: left;
 	margin: 0;
 	padding: 0;
@@ -861,8 +862,100 @@ color: #766357;
 	text-transform: uppercase;
 	font-size: 12px;
 	line-height: 18px;
+  margin-left: 0;
+  padding-top: 6px;
 }
 
+.sorting-item a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+  margin-left: 34px;
+}
+
+.sorting-item-active a {
+  color: #81b3d2;
+  border-bottom: 0;
+}
+
+.sorting-item a:hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-item a:active {
+  color: #000000;
+  border-bottom: 0;
+}
+
+.sorting-item:first-child {
+  margin-left: 0;
+}
+
+.sorting-item:nth-child(2) a {
+  margin-left: 38px;
+}
+
+.sorting-item:nth-child(5) {
+  float: right;
+  font-size: 0px;
+}
+
+.sorting-up {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 10px;
+  right: 23px;
+  background: url(../img/sprite.png);
+    width: 11px;
+    height: 10px;
+    background-position: -25px -2141px;
+}
+
+.sorting-up:hover {
+    background-position: -25px -2021px;
+}
+
+.sorting-up:active {
+  background-position: -25px -2081px;
+}
+
+.sorting-down {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 9px;
+  right: 0;
+  background: url(../img/sprite.png);
+    width: 11px;
+    height: 10px;
+    background-position: -25px -646px;
+}
+
+.sorting-down:hover {
+    background-position: -25px -586px;
+}
+
+.sorting-down:active {
+    background-position: -25px -646px;
+}
+
+/*
+.sorting-down {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 9px;
+  right: 0;
+  background: url(../img/sprite.png);
+    width: 11px;
+    height: 10px;
+    background-position: -25px -706px;
+}
+*/
+
+/*Результат */
 .hotel {
 	position: relative;
 	padding: 30px 72px;
