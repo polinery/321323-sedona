@@ -513,7 +513,10 @@ color: #766357;
 	float: right;
 	padding: 6px 0;
 	padding-left: 10px;
-	width: 336px;
+  padding-right: 35px;
+	width: 346px;
+  height: 38px;
+  box-sizing: border-box;
 	outline: 0;
 	border: 0;
 	background-color: #f2f2f2;
@@ -521,6 +524,10 @@ color: #766357;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 26px;
+}
+
+.search-data input::-ms-clear {
+   display: none;
 }
 
 .search-data span {
@@ -551,7 +558,7 @@ color: #766357;
 
 .adults {
 	float: left;
-	width: 229px;
+	width: 227px;
 }
 
 .search-guest label {
@@ -575,6 +582,8 @@ color: #766357;
 .search-guest input {
 	padding: 6px 0;
 	width: 38px;
+  height: 38px;
+  box-sizing: border-box;
 	outline: 0;
 	border: 0;
 	background-color: #f2f2f2;
