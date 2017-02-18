@@ -333,12 +333,54 @@ body {
   text-transform: uppercase;
 }
 
-.popup-hide {
-  display: none;
+@keyframes show {
+  0% {
+    -ms-transform: scaleY(0) translateY(-100%);
+    transform: scaleY(0) translateY(-100%);
+  }
+  50% {
+    -ms-transform: scaleY(1) translateY(20%);
+    transform: scaleY(1) translateY(20%);
+  }
+  70% {
+    -ms-transform: scaleY(.8) translateY(0%);
+    transform: scaleY(.8) translateY(0%);
+  }
+  90% {
+    -ms-transform: scaleY(1) translateY(10%);
+    transform: scaleY(1) translateY(10%);
+  }
+  100% {
+    -ms-transform: scaleY(1) translateY(0);
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+@keyframes hide {
+  0% {
+    -ms-transform: scaleY(1) translateY(0);
+    transform: scaleY(1) translateY(0);
+  }
+  100% {
+    -ms-transform: scaleY(0) translateY(-100%);
+    transform: scaleY(0) translateY(-100%);
+  }
+}
+
+.modal-show {
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
 }
 
 .popup-show {
-  display: block;
+  -webkit-animation: show .75s forwards;
+  animation: show .75s forwards;
+}
+
+.popup-hide {
+  -webkit-animation: hide .25s forwards;
+  animation: hide .25s forwards;
 }
 
 .search-data {
