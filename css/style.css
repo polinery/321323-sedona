@@ -443,6 +443,7 @@ body {
   height: 22px;
   background-image: url(../img/sprite.png);
   background-position: -25px -370px;
+  background-color: transparent;
 }
 
 .search-data span:hover {
@@ -508,6 +509,7 @@ body {
 .btn-plus {
   background-image: url(../img/sprite.png);
   background-position: -12px -1755px;
+  background-color: transparent;
 }
 
 .btn-plus:hover {
@@ -521,6 +523,7 @@ body {
 .btn-minus {
   background-image: url(../img/sprite.png);
   background-position: -12px -1431px;
+  background-color: transparent;
 }
 
 .btn-minus:hover {
@@ -824,6 +827,7 @@ body {
   background: url(../img/sprite.png);
   content: "";
   vertical-align: top;
+  background-color: transparent;
 }
 
 a.sorting-up {
@@ -953,6 +957,7 @@ a.sorting-down:active {
   background: url(../img/sprite.png);
   content: "";
   vertical-align: top;
+  background-color: transparent;
 }
 
 .star-four {
@@ -1106,6 +1111,7 @@ a.sorting-down:active {
   background-position: -25px -1077px;
   vertical-align: top;
   font-size: 0px;
+  background-color: transparent;
 }
 
 .footer-copyright a:hover {
